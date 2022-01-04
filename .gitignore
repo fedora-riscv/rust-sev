@@ -1,1 +1,2 @@
-/sev-0.1.0.crate
+/sev-*.crate
+*.rpm
