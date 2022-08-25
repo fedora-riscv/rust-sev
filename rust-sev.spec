@@ -10,8 +10,8 @@
 %global crate sev
 
 Name:           rust-%{crate}
-Version:        0.2.0
-Release:        3%{?dist}
+Version:        0.3.0
+Release:        1%{?dist}
 Summary:        Library for AMD SEV
 
 # Upstream license specification: Apache-2.0
@@ -88,6 +88,9 @@ which use "openssl" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Thu Aug 25 2022 Tyler Fanelli <tfanelli@redhat.com> - 0.3.0-1
+- Rebase to 0.3.0 release (rhbz#2097874)
+
 * Sat Jul 23 2022 Fedora Release Engineering <releng@fedoraproject.org> - 0.2.0-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_37_Mass_Rebuild
 
