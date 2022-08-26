@@ -8,7 +8,7 @@
 
 Name:           rust-sev
 Version:        0.3.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Library for AMD SEV
 
 License:        Apache-2.0
