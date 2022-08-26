@@ -18,7 +18,9 @@ License:        Apache-2.0
 URL:            https://crates.io/crates/sev
 Source:         %{crates_source}
 
-ExclusiveArch:  %{rust_arches}
+# SEV is an AMD x86_64 CPU feature so doesn't make sense to
+# try to build on other arches
+ExclusiveArch:  x86_64
 
 BuildRequires:  rust-packaging >= 21
 
@@ -84,6 +86,9 @@ use the "openssl" feature of the "%{crate}" crate.
 %endif
 
 %changelog
+* Fri Aug 26 2022 Cole Robinson <crobinso@redhat.com> - 0.3.0-3
+- Only build for x86_64
+
 * Thu Aug 25 2022 Fabio Valentini <decathorpe@gmail.com> - 0.3.0-2
 - Regenerate with rust2rpm v22.
 
