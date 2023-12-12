@@ -6,7 +6,7 @@
 
 Name:           rust-sev
 Version:        1.2.1
-Release:        1%{?dist}
+Release:        1.rv64%{?dist}
 Summary:        Library for AMD SEV
 
 License:        Apache-2.0
@@ -15,7 +15,7 @@ Source:         %{crates_source}
 
 # SEV is an AMD x86_64 CPU feature so doesn't make sense to
 # try to build on other arches
-ExclusiveArch:  x86_64
+ExclusiveArch:  x86_64 riscv64
 
 BuildRequires:  rust-packaging >= 21
 
